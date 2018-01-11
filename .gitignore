@@ -1,0 +1,7 @@
+.DS_Store
+notes.py
+secrets.json
+apikey.txt
+apikey.json
+apikey.csv
+miningStats_df.py
