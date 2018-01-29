@@ -1,4 +1,4 @@
-### Mining-Stats
+# Mining-Stats
 
 # Works on Python 2.x and Python 3.x (1/28/2017)
 
