@@ -55,9 +55,9 @@ def userStats():
             {'Net HR': net,
             '24h Avg': avg24,
             'BTC Balance': (float(user_call['bitcoinBalance'])),
-            'BTC-USD Balance': ('$' + str(btc_usd_short)),
+            'BTC-USD': ('$' + str(btc_usd_short)),
             'BCH Balance': (float(user_call['bitcoinCashBalance'])),
-            'BCH-USD Balance': ('$' + str(bch_usd_short))},
+            'BCH-USD': ('$' + str(bch_usd_short))},
             index=['->'],
             columns=['Net HR', '24h Avg', 'BTC Balance', 'BTC-USD Balance', 'BCH Balance', 'BCH-USD Balance'])
 
