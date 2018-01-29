@@ -59,7 +59,7 @@ def userStats():
             'BCH Balance': (float(user_call['bitcoinCashBalance'])),
             'BCH-USD': ('$' + str(bch_usd_short))},
             index=['->'],
-            columns=['Net HR', '24h Avg', 'BTC Balance', 'BTC-USD Balance', 'BCH Balance', 'BCH-USD Balance'])
+            columns=['Net HR', '24h Avg', 'BTC Balance', 'BTC-USD', 'BCH Balance', 'BCH-USD'])
 
     print(user_df)
 
