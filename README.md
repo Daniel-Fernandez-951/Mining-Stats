@@ -1,6 +1,6 @@
-# Mining-Stats
+### Mining-Stats
 
-## Works on Python 2.x and Python 3.x (1/28/2017)
+# Works on Python 2.x and Python 3.x (1/28/2017)
 
 Get all miners on pool.bitcoin.com account; their hashrate individually. Also includes user stats, like how much is in the wallet and what the USD value of it is.
 
