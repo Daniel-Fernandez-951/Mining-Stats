@@ -48,10 +48,12 @@ def userStats():
     bch_usd = (float(user_call['bitcoinCashBalance'])
                 * float(bch_call['data']['amount']))
     bch_usd_short = ("%2.f" % bch_usd)
-
+    
+    net = ("%.2f" % (float(user_call['hashrateNowTerahashes'])))
+    avg24 = ("%.2f" % (float(user_call['hashrateAverage24hrsTerahashes'])))
     user_df = pd.DataFrame(
-            {'Net HR': (float(user_call['hashrateNowTerahashes'])),
-            '24h Avg': (float(user_call['hashrateAverage24hrsTerahashes'])),
+            {'Net HR': net,
+            '24h Avg': avg24,
             'BTC Balance': (float(user_call['bitcoinBalance'])),
             'BTC-USD Balance': ('$' + str(btc_usd_short)),
             'BCH Balance': (float(user_call['bitcoinCashBalance'])),
