@@ -43,11 +43,11 @@ def userStats():
 
     btc_usd = (float(user_call['bitcoinBalance'])
                 * float(btc_call['data']['amount']))
-    btc_usd_short = ("%.3f" % btc_usd)
+    btc_usd_short = ("%.2f" % btc_usd)
 
     bch_usd = (float(user_call['bitcoinCashBalance'])
                 * float(bch_call['data']['amount']))
-    bch_usd_short = ("%.3f" % bch_usd)
+    bch_usd_short = ("%.2f" % bch_usd)
 
     net = ("%.3f" % (float(user_call['hashrateNowTerahashes'])))
     avg24 = ("%.3f" % (float(user_call['hashrateAverage24hrsTerahashes'])))
