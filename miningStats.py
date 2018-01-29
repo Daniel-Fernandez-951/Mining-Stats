@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+import os
 
 
 # Mining data and Mining user data
@@ -32,7 +33,7 @@ def minerStats():
             index=[(worker_call[0]['workername']), (worker_call[1]['workername'])],
             columns=['TH/s Now', 'TH/s 10min Avg', 'TH/s 3hr Avg', 'Last Share'])
 
-    print miner_df
+    print(miner_df)
 
 
 def userStats():
@@ -42,25 +43,33 @@ def userStats():
 
     btc_usd = (float(user_call['bitcoinBalance'])
                 * float(btc_call['data']['amount']))
+    btc_usd_short = ("%.2f" % btc_usd)
+    
     bch_usd = (float(user_call['bitcoinCashBalance'])
                 * float(bch_call['data']['amount']))
+    bch_usd_short = ("%2.f" % bch_usd)
 
     user_df = pd.DataFrame(
             {'Net HR': (float(user_call['hashrateNowTerahashes'])),
             '24h Avg': (float(user_call['hashrateAverage24hrsTerahashes'])),
             'BTC Balance': (float(user_call['bitcoinBalance'])),
-            'BTC-USD Balance': ('$' + str(btc_usd)),
+            'BTC-USD Balance': ('$' + str(btc_usd_short)),
             'BCH Balance': (float(user_call['bitcoinCashBalance'])),
-            'BCH-USD Balance': ('$' + str(bch_usd))},
+            'BCH-USD Balance': ('$' + str(bch_usd_short))},
             index=['->'],
             columns=['Net HR', '24h Avg', 'BTC Balance', 'BTC-USD Balance', 'BCH Balance', 'BCH-USD Balance'])
 
-    print user_df
+    print(user_df)
 
-
-print '\n', '----------------------MINER STATS-------------------------------------------', '\n'
+os.system("clear")
+print("\n")
+print("\n")
+print('----------------------MINER STATS-------------------------------------------')
 minerStats()
 
-print '\n', '\n', '-----------------------USER STATS--------------------------------------------', '\n'
+print("\n")
+print("\n")
+print('-----------------------USER STATS--------------------------------------------')
 userStats()
-print '\n'
+print("\n")
+print("\n")
