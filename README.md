@@ -1,6 +1,6 @@
 # Mining-Stats
 
-# Works on Python 2.x and Python 3.x (1/28/2017)
+### Works on Python 2.x and Python 3.x (1/28/2017)
 
 Get all miners on pool.bitcoin.com account; their hashrate individually. Also includes user stats, like how much is in the wallet and what the USD value of it is.
 
@@ -27,14 +27,13 @@ This data is placed in a Pandas DataFrame in KEY:VALUE format.
 
 Limitations:
 
-Can only do 2 or less miners. I am still working out, in my head, how I will make it scalable to accomidate X number of miners. 
+Can only run across 2 miners currently. I am still working out, in my head, how I will make it scalable to accommodate X number of miners. 
 
 
 
 Planned Upgrades:
 
-1. Make this eyesore less of one (was talking about the readme).
-2. Allow the program to be refreshed, user set time between refresh.
-3. Get real fancy and add some colors; green will be an increase, while red will be a decrease since last refresh.
-4. May skip #3 if I decide to go down the GUI route and see what the options are for this program couppled with a GUI.
-5. Continue learning Python (started in June of 2017).
+1. Allow the program to be refreshed, user set time between refresh.
+2. Get real fancy and add some colors; green will be an increase, while red will be a decrease since last refresh.
+3. May skip #2 if I decide to go down the GUI route and see what the options are for this program coupled with a GUI.
+4. Continue learning Python (started in June of 2017).
