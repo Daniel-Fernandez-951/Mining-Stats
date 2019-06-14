@@ -36,4 +36,4 @@ Planned Upgrades:
 1. Allow the program to be refreshed, user set time between refresh.
 2. Get real fancy and add some colors; green will be an increase, while red will be a decrease since last refresh.
 3. May skip #2 if I decide to go down the GUI route and see what the options are for this program coupled with a GUI.
-4. Continue learning Python (started in June of 2017).
+4. Continue learning Python.
