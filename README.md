@@ -4,7 +4,7 @@
 
 Get all miners on pool.bitcoin.com account; their hashrate individually. Also includes user stats, like how much is in the wallet and what the USD value of it is.
 
-
+---
 Sample output:
 
                     ----------------------MINER STATS-------------------------------------------
@@ -19,7 +19,7 @@ Sample output:
                       Net HR 24h Avg  BTC Balance  BTC-USD  BCH Balance  BCH-USD
                   ->  30.003  19.920     0.000001  $123.45     0.000001  $123.45
 
-
+---
 When this program is run, https://api.coinbase.com/v2/prices/'PAIR'/spot is used to get current price of BCH and BTC. 
 This data is placed in a Pandas DataFrame in KEY:VALUE format.
 
