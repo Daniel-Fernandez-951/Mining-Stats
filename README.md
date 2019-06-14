@@ -27,7 +27,7 @@ This data is placed in a Pandas DataFrame in KEY:VALUE format.
 
 Limitations:
 
-Can only run across 2 miners currently. I am still working out, in my head, how I will make it scalable to accommodate X number of miners. 
+Can only run across 2 miners currently. I am still working out how I will make it scalable to accommodate X number of miners. 
 
 
 
