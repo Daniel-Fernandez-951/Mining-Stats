@@ -24,13 +24,13 @@ This data is placed in a Pandas DataFrame in KEY:VALUE format.
 
 
 
-####Limitations:
+#### Limitations:
 
 Can only run across 2 miners currently. I am still working out how I will make it scalable to accommodate X number of miners. 
 
 
 
-######Planned Upgrades:
+###### Planned Upgrades:
 
 1. Allow the program to be refreshed, user set time between refresh.
 2. Get real fancy and add some colors; green will be an increase, while red will be a decrease since last refresh.
